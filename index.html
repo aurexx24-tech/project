@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Customizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mobile Customizer</h1>
+    <nav>
+      <a href="#wallpapers">Wallpapers</a>
+      <a href="#themes">Themes</a>
+      <a href="#fonts">Fonts</a>
+    </nav>
+  </header>
+
+  <section id="wallpapers">
+    <h2>Wallpapers</h2>
+    <div class="grid">
+      <a href="images/wall1.jpg" download>
+        <img src="images/wall1.jpg" alt="Wallpaper 1">
+      </a>
+      <a href="images/wall2.jpg" download>
+        <img src="images/wall2.jpg" alt="Wallpaper 2">
+      </a>
+    </div>
+  </section>
+
+  <section id="themes">
+    <h2>Themes</h2>
+    <button onclick="applyTheme('dark')">Dark Theme</button>
+    <button onclick="applyTheme('light')">Light Theme</button>
+  </section>
+
+  <section id="fonts">
+    <h2>Fonts</h2>
+    <button onclick="changeFont('Roboto')">Roboto</button>
+    <button onclick="changeFont('Poppins')">Poppins</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
